@@ -1,4 +1,5 @@
 import { Card, Grid, Typography } from "@mui/material";
+import Main from "pages/main";
 import Head from "next/head";
 import Image from "next/image";
 import styled from "styled-components";
@@ -19,62 +20,7 @@ export default function Home() {
       </Head>
 
       <main className="main">
-        <Typography variant="h1" className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </Typography>
-
-        <Typography paragraph className="description">
-          Get started by editing <code className="code">pages/index.js</code>
-        </Typography>
-
-        <Grid
-          container
-          spacing={1}
-          sx={{ flexWrap: "wrap", maxWidth: "800px" }}
-        >
-          <Grid container item sm={6}>
-            <Card className="card">
-              <a href="https://nextjs.org/learn">
-                <Typography variant="h2">Documentation &rarr;</Typography>
-                <Typography paragraph>
-                  Find in-depth information about Next.js features and API.
-                </Typography>
-              </a>
-            </Card>
-          </Grid>
-
-          <Grid container item sm={6}>
-            <Card className="card">
-              <a href="https://nextjs.org/learn">
-                <Typography variant="h2">Learn &rarr;</Typography>
-                <Typography paragraph>
-                  Learn about Next.js in an interactive course with quizzes!
-                </Typography>
-              </a>
-            </Card>
-          </Grid>
-          <Grid container item sm={6}>
-            <Card className="card">
-              <a href="https://github.com/vercel/next.js/tree/master/examples">
-                <Typography variant="h2">Examples &rarr;</Typography>
-                <Typography paragraph>
-                  Discover and deploy boilerplate example Next.js projects.
-                </Typography>
-              </a>
-            </Card>
-          </Grid>
-          <Grid container item sm={6}>
-            <Card className="card">
-              <a href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app">
-                <Typography variant="h2">Deploy &rarr;</Typography>
-                <Typography paragraph>
-                  Instantly deploy your Next.js site to a public URL with
-                  Vercel.
-                </Typography>
-              </a>
-            </Card>
-          </Grid>
-        </Grid>
+        <Main />
       </main>
 
       <footer className="footer">
